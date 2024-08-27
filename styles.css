@@ -1,0 +1,72 @@
+body {
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.left-cont {
+    border: 1px solid green;
+    display: flex;
+    
+}
+
+.right-cont {
+    border: 1px solid red;
+}
+
+/* COPIED (CHECK) */
+form {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form {
+    margin-top: 1rem;
+  }
+  
+  label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid #19c10d;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    margin-left: 0.5em;
+  }
+
+  span {
+    color: red;
+  }
