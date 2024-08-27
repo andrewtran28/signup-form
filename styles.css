@@ -1,72 +1,122 @@
+@font-face {
+    font-family: ClearSans;
+    src: url(ClearSans.ttf);
+}
+
 body {
-    justify-content: center;
     display: flex;
-    background-color: black;
+    align-items: center;
+    background-color: rgb(0, 11, 31);
     color: white;
-    margin: 0;
+    margin: 0 15rem;
     padding: 0;
     height: 100vh;
+    font-family: ClearSans, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.left-cont,
+.right-cont {
+    display: flex;
+    height: 100%; /*NEED TO CLAMP LATER*/
 }
 
 .left-cont {
-    border: 1px solid green;
+    background: no-repeat url("neo-tokyo.jpg");
+    background-size: cover;
+    background-position: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 1 2 0;
+}
+
+.title-banner {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10rem;
+    width: 100%;
+    top: 30%;
+    position: relative;
+    font-size: 2rem;
 }
 
 .right-cont {
+    flex-direction: column;
+    justify-content: center;
+    flex: 2 0 0;
+    padding-left: 2rem;
+    background-color: rgb(0, 35, 95);
+
+}
+
+.form-cont {
     border: 1px solid red;
+    display: flex;
+    width: calc(2*20rem + 5rem);
+}
+
+.field {
+    margin: 1rem 0;
 }
 
 /* COPIED (CHECK) */
 form {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 1rem;
+    margin: 1rem 0;
   }
+
+li {
+    margin-top: 1em;
+}
   
-  ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  form {
-    margin-top: 1rem;
-  }
-  
-  label {
+}
+
+label {
     display: inline-block;
     min-width: 90px;
     text-align: right;
-  }
-  
-  input,
-  textarea {
-    width: 300px;
+    display:inline-flex;
+}
+
+input,
+textarea {
+    height: 2rem;
+    width: 15rem;
     box-sizing: border-box;
     border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
+    padding: 3px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+input:focus,
+textarea:focus {
     border: 1px solid #19c10d;
-  }
-  
-  textarea {
+}
+
+textarea {
     vertical-align: top;
     height: 5em;
-  }
-  
-  .button {
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    margin-left: 0.5em;
-  }
+}
 
-  span {
+.button {
+    padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+    margin-left: 0.5em;
+}
+
+span {
     color: red;
-  }
+}
