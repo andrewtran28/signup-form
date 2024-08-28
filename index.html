@@ -13,6 +13,8 @@
                 <img id="icon" src="df_block.png" alt="Icon image of Doomfist from Overwatch 2 using the Power Block skill.">
                 minglee
             </div>
+
+            <div class="footer">Background image from <a href="https://lexica.art/prompt/1b5cbe9e-4d1a-4809-8248-92815a9e2831">Lexica</a> ; Icon image from <a href="https://overwatch.blizzard.com/en-us/heroes/doomfist/">Blizzard</a>.</div>
         </div>
 
         <div class="right-cont">
@@ -23,7 +25,7 @@
             </div>
 
             <div class="form-cont">
-                <form name="signup" action="" method="get">
+                <form name="signup" action="" method="get" onsubmit="return validateForm()">
                         <legend>Let's do this!</legend>
                         
                         <div class="field"><label for="first-name">First Name<span aria-label="required">*</span></label>
@@ -39,11 +41,11 @@
                             <br><input type="tel" id="phone" name="user_phone" placeholder="123-456-7890" minlength="7" required>
                         </div>
                         <div class="field"><label for="password">Password<span aria-label="required">*</span></label>
-                            <br><input type="password" id="password" name="user_password" minlength="8" placeholder="" required></input>
-                            <br><div class="pwd-msg">Password must be at least 8 characters long.</div>
+                            <br><input type="password" id="password" name="user_password" minlength="6" placeholder="" required></input>
+                            <br><div class="pwd-msg">Password must be at least 6 characters long.</div>
                         </div>
                         <div class="field"><label for="confirm-password">Confirm Password<span aria-label="required">*</span></label>
-                            <br><input type="password" id="confirm-password" name="user_confirm-password" minlength="8" placeholder="" required></input>
+                            <br><input type="password" id="confirm-password" name="user_confirm-password" minlength="6" placeholder="" required></input>
                         </div>
             </div>
 

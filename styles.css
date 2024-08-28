@@ -21,13 +21,15 @@ body {
 }
 
 .left-cont {
+    flex-direction: column;
+    justify-content: space-between;
     background: no-repeat url("neo-tokyo.jpg");
     background-size: cover;
     background-position: 90%;
     margin: 0;
     padding: 0;
     flex: 1 1 0;
-    width: auto;
+    width: 100%;
 }
 
 .title-banner-cont {
@@ -36,8 +38,7 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     height: 10rem;
-    width: 100%;
-    top: 30%;
+    top: 40%;
     position: relative;
     font-size: clamp(2rem, 3vw, 3rem);
     padding: 0 1rem;
@@ -45,6 +46,13 @@ body {
 
 #icon {
     margin: 0 1.5rem;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-size: 0.75rem;
 }
 
 .right-cont {
